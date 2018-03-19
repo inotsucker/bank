@@ -15,6 +15,8 @@ $this->params['breadcrumbs'][] = $this->title;
 	<h1><?= Html::encode($this->title)?></h1>
 
 	<p>Please fill out the following fields to signup:</p>
+	
+	<h1>GGWP MAN</h1>
 
 	<div class="row">
 		<div class="col-lg-5">
