@@ -16,7 +16,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
 	<p>Please fill out the following fields to signup:</p>
 	
+
 	<h1>GGWP MANNNNNNNNNNNNNNNNNNNNNN</h1>
+
+	<h1>GGWP MAN</h1>
+
 
 	<div class="row">
 		<div class="col-lg-5">
