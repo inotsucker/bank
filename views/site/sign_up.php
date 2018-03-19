@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 	<h1>GGWP MANNNNNNNNNNNNNNNNNNNNNN</h1>
 
-	<h1>GGWP MAN</h1>
+
 
 
 	<div class="row">
