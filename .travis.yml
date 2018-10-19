@@ -1,4 +1,6 @@
 language: php
 php:
   - 7.2.3
-script: phpunit test.sh
+before_install:
+  - chmod +x test.sh  
+script: ./test.sh
