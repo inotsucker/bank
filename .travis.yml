@@ -2,5 +2,6 @@ language: php
 php:
   - 7.2.3
 before_script:
+  - chmod +x test.sh  
   - composer install
 script: ./test.sh
