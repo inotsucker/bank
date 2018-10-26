@@ -8,7 +8,7 @@ set :scm, :git
 
 set :user, 'root'
 set :use_sudo, false
-set :deploy_to, "/opt/lampp/#{application}"
+set :deploy_to, "/opt/lampp/htdocs/#{application}"
 set :deploy_via, :remote_cache
 
 
