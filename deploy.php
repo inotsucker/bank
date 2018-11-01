@@ -2,7 +2,7 @@
 namespace Deployer;
 
 include_once __DIR__ . '/vendor/autoload.php';
-include_once __DIR__ . '/vendor/deployer/deployer/recipe/composer.php';
+#include_once __DIR__ . '/vendor/deployer/deployer/recipe/composer.php';
 
 host('172.104.170.27')
 	->port(22)
