@@ -10,6 +10,7 @@ host('172.104.170.27')
 	->user('deploy')
 	->set('branch', 'master')
 	->stage('production')
+	->configFile('~/.ssh/config')
 	->identityFile('~/.ssh/id_rsa');
 
 set('repository', 'git@github.com:inotsucker/bank.git');
