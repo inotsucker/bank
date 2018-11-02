@@ -7,7 +7,7 @@ include_once __DIR__ . '/vendor/deployer/deployer/recipe/composer.php';
 host('172.104.170.27')
 	->port(22)
 	->set('deploy_path', '/opt/lampp/htdocs/jian')
-	->user('deploy')
+	->user('root')
 	->set('branch', 'master')
 	->stage('production')
 	->configFile('~/.ssh/config')
