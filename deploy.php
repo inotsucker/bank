@@ -11,7 +11,7 @@ host('172.104.170.27')
 	->set('branch', 'master')
 	->stage('production')
 	->configFile('~/.ssh/config')
-	->identityFile('~/.ssh/id_rsa');
+	->identityFile('~/.ssh/id_rsa')
 	->forwardAgent(true)
 	->multiplexing(true)
 	->addSshOption('UserKnownHostsFile', '/dev/null')
