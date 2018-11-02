@@ -17,3 +17,5 @@ host('172.104.170.27')
 set('repository', 'git@github.com:inotsucker/bank.git');
 
 set('keep_releases', 5);
+
+task('build', 'composer install');
