@@ -18,8 +18,9 @@ set('repository', 'git@github.com:inotsucker/bank.git');
 
 set('keep_releases', 5);
 
-task('deploy:composer', function () {
+/*task('deploy:composer', function () {
     run('cd /opt/lampp/htdocs/jian/current && composer install');
 });
 
 task('deploy',['deploy:composer']);
+*/
