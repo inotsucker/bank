@@ -19,7 +19,7 @@ host('172.104.170.27')
 
 set('repository', 'git@github.com:inotsucker/bank.git');
 
-set('keep_releases', 5);
+//set('keep_releases', 5);
 
 //task('deploy:composer', function () {
 //    run('cd /opt/lampp/htdocs/jian/current && composer install');
