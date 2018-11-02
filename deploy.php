@@ -18,6 +18,3 @@ set('repository', 'git@github.com:inotsucker/bank.git');
 
 set('keep_releases', 5);
 
-task('my_task', function () {
-    run("composer install");
-});
