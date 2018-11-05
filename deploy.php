@@ -2,7 +2,7 @@
 namespace Deployer;
 
 include_once __DIR__ . '/vendor/autoload.php';
-include_once __DIR__ . '/vendor/deployer/deployer/recipe/composer.php';
+#include_once __DIR__ . '/vendor/deployer/deployer/recipe/composer.php';
 
 host('172.104.170.27')
 	->port(22)
@@ -13,16 +13,18 @@ host('172.104.170.27')
 	->configFile('~/.ssh/config')
 	->identityFile('~/.ssh/id_rsa')
 	->forwardAgent(true)
-//	->multiplexing(true)
+	->multiplexing(true)
 	->addSshOption('UserKnownHostsFile', '/dev/null')
     ->addSshOption('StrictHostKeyChecking', 'no');
 
 set('repository', 'git@github.com:inotsucker/bank.git');
 
-set('keep_releases', 10);
 
-//task('deploy:composer', function () {
+desc('Pull');
+task('deploy:pull', function () {
+	cd('{{deploy_path}}');
+	run('git pull origin master');
 //    run('cd /opt/lampp/htdocs/jian/current && composer install');
-//});
+});
 
-//task('deploy',['deploy:composer']);
+task('deploy',['deploy:pull']);
