@@ -22,7 +22,7 @@ set('repository', 'git@github.com:inotsucker/bank.git');
 desc('Pull');
 task('deploy:pull', function () {
 	cd('{{deploy_path}}');
-	$result = run('git pull origin master');
+	$result = run('git stash && git pull origin master && git stash pop');
 	writeln($result);
 });
 
