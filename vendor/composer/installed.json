@@ -721,6 +721,42 @@
         ]
     },
     {
+        "name": "flc/alidayu",
+        "version": "v2.0.6",
+        "version_normalized": "2.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/flc1125/alidayu.git",
+            "reference": "f4df2beaa90e639ef639b562d2b71e8dc2c3806c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/flc1125/alidayu/zipball/f4df2beaa90e639ef639b562d2b71e8dc2c3806c",
+            "reference": "f4df2beaa90e639ef639b562d2b71e8dc2c3806c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2017-08-12T02:55:34+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Flc\\Alidayu\\": "src/Alidayu/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "阿里大于(鱼)API-SDK；适用任何PHP项目，包括Laravel、Yii、Thinkphp等...",
+        "keywords": [
+            "alidayu",
+            "flc"
+        ]
+    },
+    {
         "name": "fzaninotto/faker",
         "version": "v1.8.0",
         "version_normalized": "1.8.0.0",

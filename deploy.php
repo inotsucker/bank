@@ -28,7 +28,7 @@ task('deploy:pull', function () {
 
 desc('Composer Install');
 task('deploy:composer', function () {
-//	cd('{{deploy_path}}');
+	cd('{{deploy_path}}');
 	$result1 = run('composer install');
 	writeln($result1);
 });
@@ -36,6 +36,6 @@ task('deploy:composer', function () {
 
 
 task('deploy',[
-	'deploy:composer',
 	'deploy:pull',
+	'deploy:composer',
 ]);
