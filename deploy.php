@@ -19,12 +19,14 @@ host('172.104.170.27')
 
 set('repository', 'git@github.com:inotsucker/bank.git');
 
-
 desc('Pull');
 task('deploy:pull', function () {
 	cd('{{deploy_path}}');
-	run('git pull origin master');
+	$result = run('git pull origin master');
+	writeIn($result);
 //    run('cd /opt/lampp/htdocs/jian/current && composer install');
 });
+
+
 
 task('deploy',['deploy:pull']);
