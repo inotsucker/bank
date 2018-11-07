@@ -36,11 +36,8 @@ task('deploy:composer', function () {
 desc('Migration');
 task('deploy:migrate', function () {
 	cd('{{deploy_path}}');
-	$result = run('php yii migrate');
+	$result = run('php yii migrate --interactive=0');
 	writeln($result);
-	$result1 = run('yes');
-	writeln($result1);
-
 });
 
 
