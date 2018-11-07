@@ -20,7 +20,7 @@ class m180301_115240_country_table extends Migration
             'created_at' => $this->timestamp()->defaultValue(0),
             'updated_at' => $this->timestamp()->defaultValue(0),
             'is_deleted' => $this->boolean()->defaultValue(false),
-        ])
+        ]);
     }
 
     /**

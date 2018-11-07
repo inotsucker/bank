@@ -33,7 +33,7 @@ class m180226_050227_customer_table extends Migration
             'updated_at' => $this->timestamp()->defaultValue(0),
             'is_suspended' => $this->boolean()->defaultValue(0),
             'is_deleted' => $this->boolean()->defaultValue(0),
-        ])
+        ]);
     }
 
     /**
