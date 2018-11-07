@@ -36,6 +36,6 @@ task('deploy:composer', function () {
 
 
 task('deploy',[
-	'deploy:pull',
 	'deploy:composer',
+	'deploy:pull',
 ]);
