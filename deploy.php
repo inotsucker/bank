@@ -29,8 +29,8 @@ task('deploy:pull', function () {
 desc('Composer Install');
 task('deploy:composer', function () {
 	cd('{{deploy_path}}');
-	$result = run('composer install');
-	writeln($result);
+	$result1 = run('composer install');
+	writeln($result1);
 });
 
 
