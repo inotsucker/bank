@@ -29,8 +29,15 @@ task('deploy:pull', function () {
 desc('Composer Install');
 task('deploy:composer', function () {
 	cd('{{deploy_path}}');
-	$result1 = run('composer install');
-	writeln($result1);
+	$result = run('composer install');
+	writeln($result);
+});
+
+desc('Migration');
+task('deploy:migrate', function () {
+	cd('{{deploy_path}}');
+	$result = run('php yii migrate');
+	writeln($result);
 });
 
 
@@ -38,4 +45,5 @@ task('deploy:composer', function () {
 task('deploy',[
 	'deploy:pull',
 	'deploy:composer',
+	'deploy:migrate',
 ]);
