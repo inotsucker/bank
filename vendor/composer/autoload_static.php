@@ -57,6 +57,7 @@ class ComposerStaticInit7007dcf3d2f3b64e80837e14906be170
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
+            'Psr\\Http\\Client\\' => 16,
             'Psr\\Container\\' => 14,
         ),
         'G' => 
@@ -170,6 +171,10 @@ class ComposerStaticInit7007dcf3d2f3b64e80837e14906be170
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
         'Psr\\Container\\' => 
         array (
