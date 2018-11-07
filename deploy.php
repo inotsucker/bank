@@ -24,9 +24,16 @@ task('deploy:pull', function () {
 	cd('{{deploy_path}}');
 	$result = run('git pull origin master');
 	writeln($result);
-//    run('cd /opt/lampp/htdocs/jian/current && composer install');
+});
+
+desc('Composer Install');
+task('deploy:composer', function () {
+	cd('{{deploy_path}}');
+	$result = run('composer install');
+	writeln($result);
 });
 
 
 
 task('deploy',['deploy:pull']);
+task('deploy',['deploy:composer']);
