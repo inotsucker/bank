@@ -23,7 +23,7 @@ desc('Pull');
 task('deploy:pull', function () {
 	cd('{{deploy_path}}');
 	$result = run('git pull origin master');
-	writeIn($result);
+	writeln($result);
 //    run('cd /opt/lampp/htdocs/jian/current && composer install');
 });
 
