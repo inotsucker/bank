@@ -38,6 +38,9 @@ task('deploy:migrate', function () {
 	cd('{{deploy_path}}');
 	$result = run('php yii migrate');
 	writeln($result);
+	$result1 = run('yes');
+	writeln($result1);
+
 });
 
 
