@@ -17,6 +17,8 @@ host('test')
 	->addSshOption('UserKnownHostsFile', '/dev/null')
     ->addSshOption('StrictHostKeyChecking', 'no');
 
+set('repository', 'git@github.com:inotsucker/bank.git');
+
 host('test2')
 	->hostname('139.162.59.117')
 	->port(22)
@@ -31,6 +33,16 @@ host('test2')
     ->addSshOption('StrictHostKeyChecking', 'no');
 
 set('repository', 'git@github.com:inotsucker/bank.git');
+
+
+
+
+
+
+
+
+
+
 
 desc('Pull');
 task('deploy:pull', function () {
@@ -52,8 +64,6 @@ task('deploy:migrate', function () {
 	$result = run('php yii migrate --interactive=0');
 	writeln($result);
 });
-
-
 
 task('deploy',[
 	'deploy:pull',
