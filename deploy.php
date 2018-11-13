@@ -17,6 +17,19 @@ host('test')
 	->addSshOption('UserKnownHostsFile', '/dev/null')
     ->addSshOption('StrictHostKeyChecking', 'no');
 
+host('test2')
+	->hostname('139.162.59.117')
+	->port(22)
+	->set('deploy_path', '/opt/lampp/htdocs/jian')
+	->user('root')
+	->set('branch', 'master')
+	->configFile('~/.ssh/config')
+//	->identityFile('~/.ssh/id_rsa')
+	->forwardAgent(true)
+	->multiplexing(true)
+	->addSshOption('UserKnownHostsFile', '/dev/null')
+    ->addSshOption('StrictHostKeyChecking', 'no');
+
 set('repository', 'git@github.com:inotsucker/bank.git');
 
 desc('Pull');
