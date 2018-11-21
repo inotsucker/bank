@@ -5,7 +5,7 @@ include_once __DIR__ . '/vendor/autoload.php';
 #include_once __DIR__ . '/vendor/deployer/deployer/recipe/composer.php';
 
 host('test')
-	->hostname('172.104.170.27')
+	->hostname('intern001')
 	->port(22)
 	->set('deploy_path', '/opt/lampp/htdocs/jian')
 	->user('root')
@@ -20,7 +20,7 @@ host('test')
 set('repository', 'git@github.com:inotsucker/bank.git');
 
 host('test2')
-	->hostname('139.162.59.117')
+	->hostname('intern004')
 	->port(22)
 	->set('deploy_path', '/opt/lampp/htdocs/jian')
 	->user('root')
