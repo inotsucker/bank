@@ -17,8 +17,6 @@ host('test')
 	->addSshOption('UserKnownHostsFile', '/dev/null')
     ->addSshOption('StrictHostKeyChecking', 'no');
 
-set('repository', 'git@github.com:inotsucker/bank.git');
-
 host('test2')
 	->hostname('intern004')
 	->port(22)
