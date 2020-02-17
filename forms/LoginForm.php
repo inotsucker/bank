@@ -14,12 +14,8 @@ use app\models\User;
  */
 class LoginForm extends Model
 {
-    public $usernameWhy;
-<<<<<<< HEAD
-    public $Hellowpassword;
-=======
+    public $username;
     public $password;
->>>>>>> f4ac21ec4daa955b2c49ec028d9452cc39956e70
     public $rememberMe = true;
 
     private $_user = false;
