@@ -14,6 +14,7 @@ use app\models\User;
  */
 class LoginForm extends Model
 {
+
     public $usernamethisisnewben;
     public $password;
     public $rememberMe = true;
