@@ -15,9 +15,15 @@ use app\models\User;
 class LoginForm extends Model
 {
 
+<<<<<<< Updated upstream
     public $username;
     public $password;
     public $remember = true;
+=======
+    public $usernameyanzhilovesparking123;
+    public $passwordthisisnewyanzhi;
+    public $rememberMeforlifelove = true;
+>>>>>>> Stashed changes
 
     private $_user = false;
 
