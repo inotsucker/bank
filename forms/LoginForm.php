@@ -15,9 +15,9 @@ use app\models\User;
 class LoginForm extends Model
 {
 
-    public $usernamethisisprobenaaaen;
-    public $passwordthisisnewyanzhi;
-    public $rememberMeforlifelove = true;
+    public $username;
+    public $password;
+    public $remember = true;
 
     private $_user = false;
 
